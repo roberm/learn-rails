@@ -62,6 +62,7 @@ config.action_mailer.perform_deliveries = true
 
   # CUSTOM
   BetterErrors::Middleware.allow_ip! '10.0.2.2'
+  config.cache_store = :null_store
   # /CUSTOM
-  
+
 end

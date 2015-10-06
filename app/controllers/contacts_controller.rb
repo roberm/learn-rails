@@ -20,7 +20,9 @@ class ContactsController < ApplicationController
 
 		if @contact.valid?
 
-			# TODO send message
+			#UserMailer.contact_email(@contact).deliver
+			UserMailer.contact_email(@contact).deliver_now
+
 			flash[:notice] = "Message send from #{@contact.name}"
 
 			redirect_to root_path

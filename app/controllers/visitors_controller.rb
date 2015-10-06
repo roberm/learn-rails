@@ -11,8 +11,8 @@ class VisitorsController < ApplicationController
 		#flash[:alert] = 'Alert message'
 
 		# When render
-		flash.now[:notice] = 'Notice message'
-		flash.now[:alert] = 'Alert message'
+		#flash.now[:notice] = 'Notice message'
+		#flash.now[:alert] = 'Alert message'
 
 		# Render view
 		# -----------

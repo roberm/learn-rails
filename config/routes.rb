@@ -54,5 +54,10 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
+  #post 'contact', to: 'contacts#process_form' # <- for "oldway" contact form
+
+  resources :contacts, only: [ :new, :create ]
+
   root to: 'visitors#new'
+
 end
